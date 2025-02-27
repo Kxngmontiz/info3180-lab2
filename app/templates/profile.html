@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+
+{% block main %}
+<div class="profile-card">
+  <div class="top-card">
+    <img src={{url_for('static', filename='images/profile.jpg')}}>
+    <h3>Tajae Montaque</h3>
+    <span>@Kxngmontiz</span>
+    <span>Kingston, Jamaica</span>
+    <span>Joined {{date_joined}}</span>
+  </div>
+  <div class="bottom-card">
+    <p>I am a passionate web developer and Data Scientist.</p>
+    <span>
+      <div>
+        <p>7</p>
+        <span>Posts</span>
+      </div> 
+
+      <div>
+        <p>100</p>
+        <span>Following</span>
+      </div> 
+      <div> 
+        <p>250</p>
+        <span>Followers</span>
+      </div>
+    </span>
+
+    <button class="profile-button">Follow</button>
+  </div>
+</div>
+    
+
+{% endblock main %}
